@@ -16,4 +16,4 @@ function showSlides(n, no) {
      x[i].style.display = "none";  
   }
   x[slideIndex[no]-1].style.display = "block";  
-}
+}// JavaScript Document
