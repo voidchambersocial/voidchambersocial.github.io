@@ -2,6 +2,39 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+form {
+  border: 3px solid #F7FBC5;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.container2 {
+  padding: 20px;
+  background-color: black;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 20px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 16px solid black;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 1px;
+}
+
+input[type=submit] {
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
 .bottom-center{
 	position: absolute;
 	bottom: 8px;
