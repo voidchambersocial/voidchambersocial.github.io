@@ -2,6 +2,19 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+.bottom-center{
+	position: absolute;
+	bottom: 8px;
+	width:800px;
+	right:40px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color:antiquewhite;
+}
+
 h2{
 	color:antiquewhite
 }
@@ -20,6 +33,9 @@ section {
   -ms-flex: 3;
   flex: 3;
   padding: 10px;
+	max-height:208px;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .flex2{
@@ -42,6 +58,7 @@ div.about{
 	font-family: "Times New Roman", Times, serif;
   margin:auto;
   width: 600px;
+height:1;
   text-align: justify;
 }
 
