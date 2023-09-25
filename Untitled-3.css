@@ -2,6 +2,13 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+div.about{
+  margin:auto;
+  width: 600px;
+  height: 1000px;
+  text-align: justify;
+}
+
 img.discord {
   position: absolute;
   top: 25px;
