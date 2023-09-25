@@ -2,13 +2,27 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+.flex1{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+.flex2{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 20px;
+}
+
 .p1{
   font-family: "Times New Roman", Times, serif;
 }
 .p3 {
   font-family: "Lucida Console", "Courier New", monospace;
 	color: antiquewhite;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 div.about{
