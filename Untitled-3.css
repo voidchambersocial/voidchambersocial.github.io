@@ -2,10 +2,19 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+.p1{
+  font-family: "Times New Roman", Times, serif;
+}
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+	color: antiquewhite;
+	font-size: 18px;
+}
+
 div.about{
+	font-family: "Times New Roman", Times, serif;
   margin:auto;
   width: 600px;
-  height: 1000px;
   text-align: justify;
 }
 
