@@ -3,21 +3,21 @@
 img {vertical-align: middle;}
 
 img.discord {
-  position: fixed;
+  position: absolute;
   top: 25px;
   right: 130px;
   width: 50px;
 }
 
 img.twitter {
-  position: fixed;
+  position: absolute;
   top: 22px;
   right: 213px;
   width: 50px;
 }
 
 img.steam {
-  position: fixed;
+  position: absolute;
   top: 30px;
   right: 30px;
   width: 50px;
