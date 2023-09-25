@@ -2,6 +2,19 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+h2{
+	color:antiquewhite
+}
+
+p{
+	color:antiquewhite
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
 .flex1{
   -webkit-flex: 3;
   -ms-flex: 3;
