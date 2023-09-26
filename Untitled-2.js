@@ -17,3 +17,31 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";  
 }// JavaScript Document
+
+document.getElementById("subscriptionForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const email = document.querySelector("input[name='mail']").value;
+            
+            // Validate email address here (basic validation)
+            if (validateEmail(email)) {
+                // Save the email to local storage (example)
+                saveEmailToLocalStorage(email);
+                alert("Thank you for subscribing!");
+                // You can also send the email to an API or perform other actions here
+            } else {
+                alert("Please provide a valid email address.");
+            }
+        });
+
+        function validateEmail(email) {
+            // Basic email validation using a regular expression
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+
+        function saveEmailToLocalStorage(email) {
+            // Example: Store the email in local storage
+            const existingEmails = JSON.parse(localStorage.getItem("subscribers")) || [];
+            existingEmails.push(email);
+            localStorage.setItem("subscribers", JSON.stringify(existingEmails));
+        }
