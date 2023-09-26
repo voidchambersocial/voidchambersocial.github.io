@@ -45,3 +45,34 @@ document.getElementById("subscriptionForm").addEventListener("submit", function 
             existingEmails.push(email);
             localStorage.setItem("subscribers", JSON.stringify(existingEmails));
         }
+// Retrieve JSON data from local storage
+const storedData = localStorage.getItem("subscribers");
+
+// Check if there's any data in local storage
+if (storedData) {
+    // Parse the JSON data into a JavaScript object
+    const subscribers = JSON.parse(storedData);
+
+    // Create a string to hold the list of subscriber emails
+    let subscriberList = "";
+
+    // Loop through the subscribers and add each email to the list
+    subscribers.forEach((email, index) => {
+        // Add a comma and space after each email (except the last one)
+        if (index === subscribers.length - 1) {
+            subscriberList += email;
+        } else {
+            subscriberList += email + ", ";
+        }
+    });
+
+    // Insert the list into the HTML element with the id "subscriberList"
+    const subscriberListElement = document.getElementById("subscriberList");
+    if (subscriberListElement) {
+        subscriberListElement.textContent = "List of Subscribers: " + subscriberList;
+    } else {
+        console.log("HTML element with id 'subscriberList' not found.");
+    }
+} else {
+    console.log("No subscriber data found in local storage.");
+}
