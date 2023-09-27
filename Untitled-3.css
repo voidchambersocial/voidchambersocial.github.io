@@ -2,6 +2,11 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+/* CSS to hide the subscriber list for regular visitors */
+.hidden {
+    display: none;
+}
+
 form {
   border: 3px solid #F7FBC5;
   font-family: "Lucida Console", "Courier New", monospace;
