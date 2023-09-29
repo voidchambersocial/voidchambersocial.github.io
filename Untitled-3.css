@@ -2,6 +2,105 @@
 .mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
+
+/* Ensure that the parent container allows overflow */
+.navbar {
+    overflow: visible; /* Adjust as needed */
+    /* Other styles */
+}
+/* Increase the z-index for dropdown menus */
+.dropdown-content {
+    z-index: 1000; /* Adjust the value as needed */
+	position: absolute; /* Set to relative or absolute depending on your layout */
+	overflow: visible;
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: visible;
+	 position: relative;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Styling for the sticky "Get Now" button */
+.sticky-button {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 999;
+}
+
+.sticky-button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Styling for the FAQ page */
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+/* Styling for the FAQ items */
+.faq-item {
+    /* You can add additional styling here if needed */
+}
+
+/* Styling for the FAQ questions */
+.faq-item strong {
+    /* You can add additional styling here if needed */
+}
+
+/* Styling for the FAQ answers */
+.faq-answer {
+    /* You can add additional styling here if needed */
+}
+/* Add some basic styling for code */
+        code {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background-color: #333; /* Background color for code */
+            color: #FFD700; /* Text color for code */
+            padding: 2px 5px; /* Padding around code */
+            font-size: 18px; /* Font size for code */
+        }
+
+
+
 /* CSS to hide the subscriber list for regular visitors */
 .hidden {
     display: none;
@@ -126,6 +225,7 @@ img.steam {
 .slideshow-container {
   position: relative;
   margin: auto;
+	z-index:1;
 }
 
 /* Next & previous buttons */

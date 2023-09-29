@@ -3,6 +3,18 @@ let slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
 
+// JavaScript to show/hide the sticky button as you scroll
+window.addEventListener('scroll', function() {
+    var button = document.querySelector('.sticky-button');
+    if (window.scrollY > 100) {
+        button.style.display = 'block';
+    } else {
+        button.style.display = 'none';
+    }
+});
+
+
+
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }

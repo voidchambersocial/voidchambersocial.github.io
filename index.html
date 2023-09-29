@@ -6,10 +6,25 @@
 <title>Home</title>
 <link rel="icon" type="image/x-icon" href="img/void logo.jpg">
 </head>
-<body style="background-color:black">
+<body style="background-color:black;color:antiquewhite">
+	<ul class="navbar">
+  <li class="news"><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+  <li class="logo"><a href="index.html"><img src="img/VC_Full_white_on_black_1920x1080_1280x720-removebg-preview.png" style="width:10em;"></a></li>
+</ul>
+
+    <!-- Your other webpage content goes here -->
+	
 	<div id="subscriberList" class="hidden"></div>
 
-<a href="index.html">	<img src="img/void logo.jpg" style="width:100px;" alt=""> </a>
+
 	<section>
 <a href="https://twitter.com/VoidChamber" target="_blank"><img class="twitter" src="img/twitter.png" alt="" ></a>
 	<a href="https://store.steampowered.com/developer/voidchamber/" target="_blank"><img class="steam" src="img/steam.png" alt=""></a>
@@ -136,7 +151,36 @@ Marketing and social manager, Void Chamber</p>
 		</div>
 	<section style="width:100%">
 		<article class="flex2">
-	<a href="https://linktr.ee/voidchambers"><h2 style="font-size:50px;bottom:20px" class="p3">socials</h2></a></article>
+	<h1>Frequently Asked Questions</h1>
+
+    <!-- FAQ Items -->
+    <div class="faq-item">
+        <strong onclick="toggleAnswer(1)">Q: When is the game coming out?</strong>
+        <div class="faq-answer" id="answer1">
+            A: The game will release in <code>2024</code>.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <strong onclick="toggleAnswer(2)">Q: How do I get early access?</strong>
+        <div class="faq-answer" id="answer2">
+            A: By signing up for our newsletter!
+        </div>
+    </div>
+
+    <!-- Add more FAQ items as needed -->
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        function toggleAnswer(id) {
+            const answer = document.getElementById(`answer${id}`);
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+            } else {
+                answer.style.display = 'none';
+            }
+        }
+    </script></article>
 		<div id="mc_embed_shell" style="width:50%">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
@@ -151,7 +195,7 @@ Marketing and social manager, Void Chamber</p>
 What about to be the first to see behind the scenes action and updates? 
 No? Well do you want Early Access? If so, Subscribe now!</p>
             <div class="indicates-required" style="color:antiquewhite;font-size:10px;margin-bottom: 10px;margin-left:10px"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group" style="text-align:center;margin-bottom:20px"><label for="mce-EMAIL" style="color:antiquewhite;text-align:center;margin-bottom:20px;font-size: 20px">Email Address <span class="asterisk">*</span><br></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="background:black;margin:auto;"><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+            <div class="mc-field-group" style="text-align:center;margin-bottom:20px"><label for="mce-EMAIL" style="color:antiquewhite;text-align:center;margin-bottom:20px;font-size: 20px">Email Address <span class="asterisk">*</span><br></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="background:black;margin:auto;color:antiquewhite"><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
         <div id="mce-responses" class="clear foot">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
@@ -173,6 +217,12 @@ No? Well do you want Early Access? If so, Subscribe now!</p>
 
 		
 	</section>
+	
+	<!-- Sticky "Get Now" button -->
+    <div class="sticky-button">
+        <a href="https://store.steampowered.com/app/2304480/Elite_Rogue/">Get Now</a>
+    </div>
+	
 <script src="/Untitled-2.js">
 
 </script>
