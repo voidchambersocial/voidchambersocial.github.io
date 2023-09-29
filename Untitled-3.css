@@ -22,7 +22,7 @@ img {vertical-align: middle;}
   flex-grow: 1; /* This will make the .logo take up remaining space */
 	margin-left: auto;
   margin-right: auto;
-	height: 2em;
+	height:auto;
 }
 
 .logo img {
