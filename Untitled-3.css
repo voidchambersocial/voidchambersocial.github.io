@@ -3,53 +3,68 @@
 img {vertical-align: middle;}
 
 
-/* Ensure that the parent container allows overflow */
 .navbar {
-    overflow: visible; /* Adjust as needed */
-    /* Other styles */
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  width: 100%; /* Ensure the navbar takes up the full width */
+	
 }
-/* Increase the z-index for dropdown menus */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* This will make the .logo take up remaining space */
+	margin-left: auto;
+  margin-right: auto;
+	height: 2em;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto; /* Center the image within the .logo container */
+}
+li {
+  margin-right: 10px; /* Adjust the margin between items */
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
 .dropdown-content {
-    z-index: 1000; /* Adjust the value as needed */
-	position: absolute; /* Set to relative or absolute depending on your layout */
-	overflow: visible;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 }
 
-/* Styling for the navigation menu */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    overflow: visible;
-	 position: relative;
-}
-
-nav li {
-    float: left;
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Dropdown menu styles */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-}
+.dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 
 /* Styling for the sticky "Get Now" button */
@@ -225,7 +240,7 @@ img.steam {
 .slideshow-container {
   position: relative;
   margin: auto;
-	z-index:1;
+	z-index:0;
 }
 
 /* Next & previous buttons */
@@ -237,7 +252,7 @@ img.steam {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 180px;
+  font-size: 2em;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
