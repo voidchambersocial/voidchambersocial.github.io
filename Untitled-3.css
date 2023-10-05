@@ -1,8 +1,140 @@
 * {box-sizing: border-box}
-.mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 
 #more {display: none;}
+#more1 {display: none;}
+
+
+
+.hover:hover{
+	background-color: hsla(0,0%,98%,0.52);
+}
+
+.mySlides{
+	display: none;
+}
+
+@keyframes fade{
+	from {opacity: 0.4}
+	to {opacity: 1}
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+.slides{
+	position: relative;
+}
+
+.bgblack{
+	background-color: hsla(0,0%,0%,0.53);
+}
+
+.flex{
+	-webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+	width: 30%;
+	justify-content: center;
+}
+
+.pad{
+	padding: 1em;
+}
+
+.flexcontainer{
+	display: flex;
+	padding: 2em;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.about{
+	padding: 50px; 
+	font-size: 30px; 
+	width: 100%; 
+	display: flex; 
+	align-items: center;
+}
+
+/*padded,inline, */
+.socials{
+	padding:20px;
+	display:inline-block;
+	width:5em;
+	height: 5em;
+}
+
+.img4{
+	background-image: url(img/logo.png);
+				background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 50%;
+			height: 20em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+	vertical-align: middle;
+}
+
+.img3{
+	background-image: url("img/swamp2.png");
+				background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 20em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+	vertical-align: middle;
+}
+
+.img2{
+	background-image: url("img/Untitled design (9).png");
+				background-repeat: no-repeat;
+			background-size: auto;
+			background-position: center;
+			width: 50%;
+			height: 20em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+	vertical-align: middle;
+}
+
+.img1{
+			background-image: url("img/Untitled design (8).png");
+				background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 20em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+			vertical-align: middle;
+		}
+.img5{
+			background-image: url("img/Untitled design (8).png");
+				background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 40em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+}
+html,body {
+	background-color:black;
+	color:antiquewhite;
+	margin:0;
+	padding:0;
+	background-image: url("img/background_beach.jpg");
+	background-size: contain;
+	box-sizing: border-box;
+	font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 20px;
+}
 
 .leftnav{
 	flex:1;
@@ -14,8 +146,8 @@ img {vertical-align: middle;}
 
 .displayflex{
 	display: flex;
-	justify-content: space-between; /* Elements on each end of the container */
-  align-items: center; /* Center items vertically */
+	justify-content: space-between; 
+  align-items: center; 
 	height: 4em;
 	opacity:1;
 }
@@ -90,52 +222,6 @@ li.dropdown {
   display: block;
 }
 
-/* Styling for the sticky "Get Now" button */
-.sticky-button {
-    top: 20px;
-    right: 20px;
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-
-/* Styling for the FAQ page */
-body {
-    font-family: "Lucida Console", "Courier New", monospace;
-    color: antiquewhite;
-    font-size: 20px;
-}
-
-/* Styling for the FAQ items */
-.faq-item {
-    /* You can add additional styling here if needed */
-}
-
-/* Styling for the FAQ questions */
-.faq-item strong {
-    /* You can add additional styling here if needed */
-}
-
-/* Styling for the FAQ answers */
-.faq-answer {
-    /* You can add additional styling here if needed */
-}
-/* Add some basic styling for code */
-        code {
-            font-family: "Lucida Console", "Courier New", monospace;
-            background-color: #333; /* Background color for code */
-            color: #FFD700; /* Text color for code */
-            padding: 2px 5px; /* Padding around code */
-            font-size: 18px; /* Font size for code */
-        }
-
-
-
-/* CSS to hide the subscriber list for regular visitors */
-.hidden {
-    display: none;
-}
-
 form {
   border: 3px solid #F7FBC5;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -183,11 +269,17 @@ input[type=submit]:hover {
 }
 
 h2{
-	color:antiquewhite
+	color:antiquewhite;
+	font-size:4em;
+}
+
+h{
+	font-size:3em;
 }
 
 p{
-	color:antiquewhite
+	color:antiquewhite;
+	font-size: 2em;
 }
 
 section {
@@ -210,56 +302,4 @@ section {
   padding: 20px;
 }
 
-.p1{
-  font-family: "Times New Roman", Times, serif;
-}
-.p3 {
-  font-family: "Lucida Console", "Courier New", monospace;
-	color: antiquewhite;
-	font-size: 1em;
-}
 
-div.about{
-	font-family: "Times New Roman", Times, serif;
-  margin:auto;
-  width: 30%;
-height:1;
-  text-align: justify;
-	font-size: 1em;
-}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-	z-index:0;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 2em;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a grey background color */
-.prev:hover, .next:hover {
-  background-color: #f1f1f1;
-  color: black;
-}
