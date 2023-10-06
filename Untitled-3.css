@@ -5,10 +5,21 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+.bottop{
+	padding-bottom:0.5em;
+	padding-top: 0.5em;
+}
+
 #more {display: none;}
 #more1 {display: none;}
 
-
+.bg{
+	;background: hsla(0,0%,0%,0.53);
+	
+	padding: 1em;
+	
+	box-sizing: border-box;
+}
 
 .hover:hover{
 	background-color: hsla(0,0%,98%,0.52);
@@ -121,7 +132,7 @@ img {vertical-align: middle;}
 			background-size: cover;
 			background-position: center;
 			width: 100%;
-			height: 40em;
+			height: 50em;
 			border: 0px solid hsla(0,0%,0%,1.00);
 }
 html,body {
@@ -270,16 +281,16 @@ input[type=submit]:hover {
 
 h2{
 	color:antiquewhite;
-	font-size:4em;
+	font-size:2em;
 }
 
 h{
-	font-size:3em;
+	font-size:1.5em;
 }
 
 p{
 	color:antiquewhite;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 section {
