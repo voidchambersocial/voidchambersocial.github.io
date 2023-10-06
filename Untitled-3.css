@@ -5,6 +5,41 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+.column{
+	flex-direction: column
+}
+
+.vertical{
+	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.clicker{
+	cursor: pointer;
+}
+
+.gold{
+	-webkit-flex: 2;
+  	-ms-flex: 2;
+  	flex: 2;
+	justify-content: center;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+#topVideo {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height:55em;
+  border: 0px solid hsla(0,0%,0%,1.00);
+	object-fit: cover;
+}
+
 .bottop{
 	padding-bottom:0.5em;
 	padding-top: 0.5em;
@@ -40,6 +75,7 @@ img {vertical-align: middle;}
 }
 
 .slides{
+	
 	position: relative;
 }
 
@@ -49,10 +85,12 @@ img {vertical-align: middle;}
 
 .flex{
 	-webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-	width: 30%;
+  	-ms-flex: 1;
+  	flex: 1;
 	justify-content: center;
+	box-sizing: border-box;
+	
+	max-width: 100%;
 }
 
 .pad{
@@ -65,6 +103,9 @@ img {vertical-align: middle;}
 	text-align: center;
 	justify-content: center;
 	width: 100%;
+	max-height: 500%;
+	box-sizing: border-box;
+	flex-direction: row;
 }
 
 .about{
@@ -83,58 +124,71 @@ img {vertical-align: middle;}
 	height: 5em;
 }
 
-.img4{
-	background-image: url(img/logo.png);
-				background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center;
-			width: 50%;
-			height: 20em;
-			border: 0px solid hsla(0,0%,0%,1.00);
-	vertical-align: middle;
-}
-
-.img3{
-	background-image: url("img/swamp2.png");
-				background-repeat: no-repeat;
+.img1{
+			background-image: url("img/lizard fullscreen.png");
+			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 			width: 100%;
-			height: 20em;
+			height: 30em;
 			border: 0px solid hsla(0,0%,0%,1.00);
-	vertical-align: middle;
+			vertical-align: middle;
 }
 
 .img2{
-	background-image: url("img/Untitled design (9).png");
-				background-repeat: no-repeat;
-			background-size: auto;
-			background-position: center;
-			width: 50%;
-			height: 20em;
-			border: 0px solid hsla(0,0%,0%,1.00);
-	vertical-align: middle;
-}
-
-.img1{
-			background-image: url("img/Untitled design (8).png");
-				background-repeat: no-repeat;
+			background-image: url("img/loot.gif");
+			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 			width: 100%;
-			height: 20em;
+			height: 30em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+			vertical-align: middle;
+}
+
+.img3{
+			background-image: url("img/rat king.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 30em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+			vertical-align: middle;
+}
+
+.img4{
+			background-image: url("img/dimensions.gif");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 30em;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 		}
 .img5{
-			background-image: url("img/Untitled design (8).png");
-				background-repeat: no-repeat;
+			background-image: url("img/multiplayer.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 30em;
+			border: 0px solid hsla(0,0%,0%,1.00);
+	vertical-align: middle;
+	}
+.img6{
+			background-image: url("");
+			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
 			width: 100%;
 			height: 50em;
 			border: 0px solid hsla(0,0%,0%,1.00);
+			vertical-align: middle;
 }
+	
+
 html,body {
 	background-color:black;
 	color:antiquewhite;
@@ -145,6 +199,7 @@ html,body {
 	box-sizing: border-box;
 	font-family: "Lucida Console", "Courier New", monospace;
     font-size: 20px;
+	line-height:1.8;
 }
 
 .leftnav{
@@ -187,7 +242,7 @@ position: fixed;
 	width: 100%;
 	height: 4em;
 	align-items: center;
-	background: hsla(0,0%,0%,0.53)
+	background: hsla(0,0%,0%,0.53);
 }
 
 li {
