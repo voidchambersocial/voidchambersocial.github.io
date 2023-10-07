@@ -24,14 +24,14 @@
 	
 	
 	
-<ul class="navbar ">
+<ul class="navbar margin">
 		<div class="displayflex">
 	
 
-			<div class="leftnav">
-  <li class="news" ><a href="#news" class="">News</a></li>
+			
+  <li class="news" ><a href="#news" class="flex">News</a></li>
   <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn ">Games</a>
+    <a href="javascript:void(0)" class="dropbtn flex">Games</a>
     <div class="dropdown-content">
       <a href="elite.html">Elite Rogue</a>
       <a href="cracked.html">Cracked</a>
@@ -39,7 +39,7 @@
   </li>
 		<!-- Add this HTML for the second dropdown -->
 <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn ">Community</a>
+  <a href="javascript:void(0)" class="dropbtn flex">Community</a>
   <div class="dropdown-content">
     <a href="https://store.steampowered.com/developer/voidchamber">Steam</a>
     <a href="https://discord.com/invite/N9padgGbGB">Discord</a>
@@ -48,45 +48,49 @@
   </div>
 </li>
 				
-		</div>
+		
 			<div class="leftnav">
-  <a href="index.html" class="logo "><img src="img/EliteRogueLogoOld.png" style="height: 4em" class="logo" alt=""></a>
+  <a href="index.html" class="+"><img src="img/EliteRogueLogoOld.png" style="height: 4em;align-items: center" class="logo flex center" alt=""></a>
 	</div>
-			<div class="leftnav">
-		<li class="news" style="float: right"><a href="https://store.steampowered.com/app/2304480?utm_source=website&utm_medium=Get+Now" target="_blank" class="">Get Now</a></li>
+			<div class="">
+		<li class="" ><a href="https://store.steampowered.com/app/2304480?utm_source=website&utm_medium=Get+Now" target="_blank" class="flex">Get Now</a></li>
 		</div>
 </div>
 </ul>
 	
+	
+	
     <!-- Boom! gameplay! GET NOW! Logo -->
+	
 	<video autoplay muted loop id="topVideo">
-		<source src="img/UHD.mp4" type="video/mp4">
-		video not supported
+		<source src="img/Gameplay Trailer UHD.mp4">
+	video not working
 	</video>
-	
 
 	
   
-  
-
-
+  <!--divider -->
+	
+<hr class="rounded">
 
 	<!--short game description -->
 	
-	<div class="bg flexcontainer" style="text-align: center">
-			<div class="flex flexcontainer" style="vertical-align: middle;flex-direction: column">
+	<div class="flexcontainer margin" style="text-align: center;">
+			<div class="flex flexcontainer bg" style="vertical-align: middle;flex-direction: column">
 	<h2 style="font-size:3.4em line-height:1.8;vertical-align: middle">Welcome to Elite Rogue</h2>
 		<p style="padding:1em;vertical-align: middle">An exhilarating and dynamic 3rd person roguelike adventure that promises unending excitement. As you step into this ever-changing realm, you'll confront relentless challenges, face monstrous foes, and embark on a quest to push your limits to the extreme.</p>
 			</div>
 			<div class="gold">
-	<img src="img/Untitled design (9).png" alt="" style="" class="gold">
+	<img src="img/Untitled design (9).png" alt="" style="height:24em;object-fit: cover" class="gold">
 			</div>
 	</div>
+<hr class="rounded">
+	<!--divider -->
 
 	
+<!--key gameplay mechanics! -->
 	
-	<!--key gameplay mechanics! -->
-	<div class="flexcontainer border" >
+	<div class="flexcontainer bg margin" >
 		
 	<h class="flex hover bottop clicker" onclick="currentSlide(1)">fight</h>
 	<h class="flex hover bottop clicker" onclick="currentSlide(2)">Power up</h>
@@ -102,31 +106,30 @@
 	
 	<!--key img + text -->
 	
-	<div class="flexcontainer mySlides fade slides border" style="">
-	<div class="flexcontainer">
+	<div class=" mySlides fade slides " style="">
+	<div class="flexcontainer margin">
 		<div class="img1 gold "></div>
 	
-		<div class="flex vertical flexcontainer" style="flex-direction: column">
+		<div class="flex vertical flexcontainer bg" style="flex-direction: column">
 			<h>Insight into Gameplay</h>
 			<h2>Action Awaits</h2>
 			<p>Prepare for heart-pounding action as you engage in intense 3rd person shooter combat against unrelenting hordes of monsters. Your every move and shot will determine your fate in this high-stakes battle.</p>
     	</div>
-	</div>
-	</div>	
-		<div class="flexcontainer mySlides fade bg" style="">
-			<div class="flexcontainer">
+	</div></div>
+		<div class="flexcontainer mySlides fade " style="">
+			<div class="flexcontainer margin">
 	<div class="img2 gold"></div>
-			<div class="flex flexcontainer" style="flex-direction: column">
+			<div class="flex flexcontainer bg" style="flex-direction: column">
 	<h>Insight into Gameplay</h>
 		<h2>Power up</h2>
 	<p>Forge your destiny by collecting powerful loot that will enhance your abilities and transform you into an unstoppable force. Your journey is one of constant progression, with each step bringing you closer to mastery.</p>
     	</div></div>
 	</div>
 		
-		<div class="flexcontainer mySlides fade bg" style="">
-			<div class="flexcontainer">
+		<div class="flexcontainer mySlides fade " style="">
+			<div class="flexcontainer margin">
 	<div class="img3 gold"></div>
-			<div class="flex flexcontainer" style="flex-direction: column">
+			<div class="flex flexcontainer bg" style="flex-direction: column">
 	<h>Insight into Gameplay</h>
 		<h2>Choose Your Path</h2>
 	<p>Decide your fate: Will you continue your indefinite exploration, or will you summon the courage to confront the formidable final boss that awaits at the end of your journey?</p>
@@ -135,10 +138,10 @@
 	</div>
 	
 		
-		<div class="flexcontainer mySlides fade bg">
-			<div class="flexcontainer">
+		<div class="flexcontainer mySlides fade ">
+			<div class="flexcontainer margin">
 	<div class="img4 gold"></div>
-			<div class="flex flexcontainer" style="flex-direction: column">
+			<div class="flex flexcontainer bg" style="flex-direction: column">
 	<h>Insight into Gameplay</h>
 		<h2>Explore</h2>
 	<p>Embark on a journey of exploration across diverse dimensions, where maps shift and change, offering limitless replayability. Whether you seek indefinite discovery or the ultimate challenge, the choice is yours.</p>
@@ -147,102 +150,129 @@
 			
 		
 	
-		<div class="flexcontainer mySlides fade bg">
-			<div class="flexcontainer">
+		<div class="flexcontainer mySlides fade ">
+			<div class="flexcontainer margin">
 	<div class="img5 gold"></div>
-			<div class="flex flexcontainer" style="flex-direction: column">
+			<div class="flex flexcontainer bg" style="flex-direction: column">
 	<h>Insight into Gameplay</h>
 		<h2>Multiplayer Adventures</h2>
 	<p>Team up with friends for cooperative quests or test your mettle against one another in competitive modes. The possibilities are as boundless as the dimensions you'll explore.</p>
     	</div></div>
 	</div>
 	
-	<!--arrows -->
-
-	
-	
-	<!--key buttons -->
+	<!--divider -->
+<hr class="rounded">
 		
 	
 	
 
 	<!--News -->
 	
-
-<a href="blogs.html"><h2 style="color:white;font-size:4em;" class="p3 bg" id="news">News</h2>
+<div class="img7 margin">
+<a href="blogs.html"><h2 style="color:white;font-size:1em;" class="bg center" id="news">News</h2>
 </a>
 	
 	
 	
 <section class="bg" style="width: 100%">
-		<article class="flex1">
-	<a href="news.html"><h2 class="p3">News</h2></a>
-		<p class="p3">We are thrilled to announce the launch of our brand-new website, the central hub for all things relatd to our game development journey. Here, you'll find information about our team, our games, exclusive content, and much more!<span id="dots">...</span><span id="more">
+		<article class="flex1 center">
+	<a href="news.html"><h2 class="p3 center">News</h2></a>
+		<p class="p3">
+  We are thrilled to announce the launch of our brand-new website, the central hub for all things related to our game development journey. 
+			<br>
+Here, you'll find information about our team, our games, exclusive content, and much more!</p><span id="dots">...</span>
+			<span id="more">
+				
+    <h2>About Us</h2>
+    <p>Get to know the passionate individuals behind Void Chamber. Learn about their roles, backgrounds, and what drives their love for game development. We're not just developers; we're gamers too!</p>
 
-About Us: Get to know the passionate individuals behind Void Chamber. Learn about their roles, backgrounds, and what drives their love for game development. We're not just developers; we're gamers too!
+    <h2>Our Games</h2>
+    <p>Discover the thrilling world of our games. From the heart-pounding action of "Cracked," our hardcore platformer, to the upcoming adventure of "Elite Rogue," a 3rd person action roguelike, we've got something for every gaming enthusiast.</p>
 
-Our Games: Discover the thrilling world of our games. From the heart-pounding action of "Cracked," our hardcore platformer, to the upcoming adventure of "Elite Rogue," a 3rd person action roguelike, we've got something for every gaming enthusiast.
+    <h2>Screenshots and Videos</h2>
+    <p>Take a visual journey through our games with screenshots, gameplay videos, and trailers. Get a sneak peek at the stunning visuals and exciting gameplay that await you.</p>
 
-Screenshots and Videos: Take a visual journey through our games with screenshots, gameplay videos, and trailers. Get a sneak peek at the stunning visuals and exciting gameplay that await you.
+    <h2>Game Development Journey</h2>
+    <p>Dive into the development process of our games. We'll share the challenges we've faced, creative decisions we've made, and the exciting milestones we've achieved. It's like a backstage pass to game development!</p>
 
-Game Development Journey: Dive into the development process of our games. We'll share the challenges we've faced, creative decisions we've made, and the exciting milestones we've achieved. It's like a backstage pass to game development!
+    <h2>Development Tips</h2>
+    <p>For all you aspiring game developers out there, we'll be sharing valuable tips, tricks, and lessons learned from our journey. Stay tuned for insights that could help you on your own creative path.</p>
 
-Development Tips: For all you aspiring game developers out there, we'll be sharing valuable tips, tricks, and lessons learned from our journey. Stay tuned for insights that could help you on your own creative path.
+    <h2>Upcoming Events</h2>
+    <p>Join us at gaming conventions, online events, and live streams. Connect with our team and fellow gamers as we share our passion for gaming and game development. Keep an eye on our blog for event announcements.</p>
 
-Upcoming Events: Join us at gaming conventions, online events, and live streams. Connect with our team and fellow gamers as we share our passion for gaming and game development. Keep an eye on our blog for event announcements.
+    <h2>Community Engagement</h2>
+    <p>We believe in the power of community. Join our Discord server, subscribe to our YouTube channel, follow us on Twitter, and check out our Steam page. We can't wait to interact with you, share updates, and discuss all things gaming!</p>
 
-Community Engagement: We believe in the power of community. Join our Discord server, subscribe to our YouTube channel, follow us on Twitter, and check out our Steam page. We can't wait to interact with you, share updates, and discuss all things gaming!
+    <h2>Newsletter Rewards</h2>
+    <p>Don't miss out on our exclusive email newsletter! Subscribers will enjoy early access to our games when the time comes. It's our way of saying thank you for being a part of our journey.</p>
 
-Newsletter Rewards: Don't miss out on our exclusive email newsletter! Subscribers will enjoy early access to our games when the time comes. It's our way of saying thank you for being a part of our journey.
+    <h2>Release Date Teasers</h2>
+    <p>Stay tuned for exciting release date teasers! We can't wait to share when you can dive into our games and embark on unforgettable adventures.</p>
 
-Release Date Teasers: Stay tuned for exciting release date teasers! We can't wait to share when you can dive into our games and embark on unforgettable adventures.
+    <h2>Contact Us</h2>
+    <p>Have questions or want to reach out? Feel free to contact us anytime. We're open to inquiries, partnerships, and collaboration opportunities. Your feedback and ideas are always welcome.</p>
 
-Contact Us: Have questions or want to reach out? Feel free to contact us anytime. We're open to inquiries, partnerships, and collaboration opportunities. Your feedback and ideas are always welcome.
+    <h2>Join Us on Our Journey</h2>
+    <p>We're on a mission to create unforgettable gaming experiences, and we want you to be a part of it. Join us on our website, subscribe to our newsletter, and connect with us on Discord, YouTube, Twitter, and Steam. We can't wait to share this incredible journey with you!</p>
 
-Join Us on Our Journey: We're on a mission to create unforgettable gaming experiences, and we want you to be a part of it. Join us on our website, subscribe to our newsletter, and connect with us on Discord, YouTube, Twitter, and Steam. We can't wait to share this incredible journey with you!
-
-Thank you for your support, and we look forward to gaming with you soon! 🎮🌠</span></p>
+    <p>Thank you for your support, and we look forward to gaming with you soon!</p>
+  </span>
+<br>
 			<button onclick="readmore()" id="myBtn" style="color: antiquewhite;background-color: black;font-size: 1em;border-color: aliceblue">Read more</button>
 		<br></article>
-		<article class="flex1">
-		<a href="rat.html"><h2 class="p3" >Lorenzo</h2></a>
-			<p class="p3">Greetings, brave adventurers! A new threat has emerged on the mystical Electro Island, and his name is Lorenzo Tattagila. This rogue has established his base of operations and proudly proclaims himself as the island's lord and savior, convinced that the gods themselves are in his favor. Why, you ask? Because every Sunday, cheese rains from the skies!<span id="dots1">...</span><span id="more1"> But don't be fooled, for there may be more to this cheesy spectacle than meets the eye. Whispers among the locals suggest that Lorenzo's so-called "godly" powers are not what they seem. It's said that a mysterious figure known as Dr. Schneider may be pulling the strings behind the scenes. When Lorenzo isn't busy reveling in his cheesy miracles, you can find him in his exclusive "Rat Club" or aboard his luxurious yacht. The Rat Club is his secret lair where he and his loyal followers congregate to discuss their grandiose plans and indulge in their love for all things rodent-related. And if you're lucky enough to score an invite, you might just uncover the secrets of his cheese-powered empire. Are you daring enough to challenge Lorenzo Tattagila, the self-proclaimed Cheesy Conqueror of Electro Island? Will you uncover the truth behind the cheese rains and the enigmatic Dr. Schneider? Prepare yourselves, adventurers, for an epic roguelike adventure that will take you to the very heart of this cheesy mystery! 🧀🗝️🌩️</span></p>
+		<article class="flex1 center">
+		<a href="rat.html"><h2 class="p3 center" >Lorenzo</h2></a>
+			<p class="p3">
+  Greetings, brave adventurers! A new threat has emerged on the mystical Electro Island, and his name is Lorenzo Tattagila. This rogue has established his base of operations and proudly proclaims himself as the island's lord and savior, convinced that the gods themselves are in his favor. Why, you ask? Because every Sunday, cheese rains from the skies!
+  <span id="dots1">...</span>
+  <span id="more1">
+    But don't be fooled, for there may be more to this cheesy spectacle than meets the eye. Whispers among the locals suggest that Lorenzo's so-called "godly" powers are not what they seem. It's said that a mysterious figure known as Dr. Schneider may be pulling the strings behind the scenes.
+    When Lorenzo isn't busy reveling in his cheesy miracles, you can find him in his exclusive "Rat Club" or aboard his luxurious yacht. The Rat Club is his secret lair where he and his loyal followers congregate to discuss their grandiose plans and indulge in their love for all things rodent-related. And if you're lucky enough to score an invite, you might just uncover the secrets of his cheese-powered empire.
+    Are you daring enough to challenge Lorenzo Tattagila, the self-proclaimed Cheesy Conqueror of Electro Island? Will you uncover the truth behind the cheese rains and the enigmatic Dr. Schneider? Prepare yourselves, adventurers, for an epic roguelike adventure that will take you to the very heart of this cheesy mystery!
+  </span>
+</p>
+
 			<button onclick="readmore1()" id="myBtn1" style="color: antiquewhite;background-color: black;font-size: 1em;border-color: aliceblue">Read more</button>
 			</article>
 		<article class="flex1">
-			<a href="shmp.html"><h2 class="p3">SHMUP FEST</h2></a>
+			<a href="shmp.html"><h2 class="p3 center">SHMUP FEST</h2></a>
 			<p class="p3">Exciting news! We're thrilled to join Steam's Shmup Fest 2023, starting on the 25th. Get ready for an epic shoot 'em up experience!&nbsp;Check out our game on Steam and hit that wishlist button to stay updated!</p>
 			
 			</article>
 	
 	
 	</section>
+	</div>
 	
+	<hr class="rounded">
 	
-	<section style="width:100%">
-		<article class="flex2">
+	<div class="img8 margin">
+	
+	<section class="" style="width: auto">
+	
 	
 
 
-</article>
+
     <script src="Untitled-2.js">
 </script>
 	
-	  <div id="mc_embed_shell" style="width:50%">
+	  <div id="mc_embed_shell" style="width:auto;margin-left: auto;margin-right: auto">
       <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
   <style type="text/css">
         #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup" style="background: hsla(0,0%,0%,0.00);width:auto" class="flex2">
+<div id="mc_embed_signup" style="background: hsla(0,0%,0%,0.00);width:auto" class="">
     <form action="https://github.us13.list-manage.com/subscribe/post?u=7f47ddcb1022650e12d5b288c&amp;id=003aa5a061&amp;f_id=007d05e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate bg" target="_blank">
         <div id="mc_embed_signup_scroll"><h2 style="text-align:center">Subscribe</h2>
-			<p class="p3" style="width: auto;padding: 10px;">Do you want to be the first to hear the news? <br>
+			<p class="" style="width: auto;padding: 10px;">Do you want to be the first to hear the news? <br>
 What about to be the first to see behind the scenes action and updates? 
 No? Well do you want Early Access? If so, Subscribe now!</p>
             <div class="indicates-required" style="color:antiquewhite;font-size:10px;margin-bottom: 10px;margin-left:10px"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group" style="text-align:center;margin-bottom:20px"><label for="mce-EMAIL" style="color:antiquewhite;text-align:center;margin-bottom:20px;font-size: 20px">Email Address <span class="asterisk">*</span><br></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="background: hsla(0,0%,0%,0.00);margin:auto;color:antiquewhite"><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+            <div class="mc-field-group" style="text-align:center;margin-bottom:20px"><label for="mce-EMAIL" style="color:antiquewhite;text-align:center;margin-bottom:20px;font-size: 1em">Email Address <span class="asterisk">*</span><br></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="" style="background: hsla(0,0%,0%,0.00);margin:auto;color:antiquewhite"><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
         <div id="mce-responses" class="clear foot">
             <div class="response" id="mce-error-response" style="display: none;"></div>
             <div class="response" id="mce-success-response" style="display: none;"></div>
@@ -284,8 +314,9 @@ No? Well do you want Early Access? If so, Subscribe now!</p>
 
 	
 
-<footer style="">
-        <p style="display: flex;justify-content: center" class="bg">&copy; 2023 Void Chamber. All rights reserved.</p>
+	<footer style="">
+        <p style="display: flex;justify-content: center" class="">&copy; 2023 Void Chamber. All rights reserved.</p>
     </footer>
+	</div>
 </body>
 </html> 
