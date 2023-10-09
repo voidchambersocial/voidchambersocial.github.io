@@ -5,6 +5,8 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
+
+
 .center{
 	text-align: center;
 	justify-content: center;
@@ -432,7 +434,7 @@ h{
 
 p{
 	color:antiquewhite;
-	font-size: 0.7em;
+	font-size: 0.8em;
 }
 
 section {
