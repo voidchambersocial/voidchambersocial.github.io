@@ -276,7 +276,8 @@ html,body {
 	margin-top:0;
 	padding:0;
 	background-image: url("img/background_beach.jpg");
-	background-size: contain;
+	background-size: cover;
+	background-attachment: fixed;
 	box-sizing: border-box;
 	font-family: "Lucida Console", "Courier New", monospace;
     font-size: 20px;
