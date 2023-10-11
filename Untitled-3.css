@@ -29,8 +29,8 @@ body, h1, p, div,video {
 }
 
 .pad1{
-	padding-bottom: 1em;
-	padding-top: 1em;
+	padding-bottom: 1vw;
+	padding-top: 1vw;
 }
 
 hr.rounded {
@@ -85,7 +85,7 @@ hr.rounded {
   right: 0;
   top: 0;
   width: 100%;
-  height:50em;
+  height:100vh;
   
 	object-fit: cover;
 }
@@ -101,7 +101,7 @@ hr.rounded {
 .bg{
 	;background: hsla(0,0%,0%,0.53);
 	
-	padding: 1em;
+	padding: 1vw;
 	
 	box-sizing: border-box;
 }
@@ -144,7 +144,7 @@ hr.rounded {
 }
 
 .pad{
-	padding: 1em;
+	padding: 1vw;
 }
 
 .flexcontainer{
@@ -170,8 +170,8 @@ hr.rounded {
 .socials{
 	padding:20px;
 	display:inline-block;
-	width:96px;
-	height: 96px;
+	width:5vw;
+	height: 5vw;
 }
 
 .img1{
@@ -179,8 +179,8 @@ hr.rounded {
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-position: center;
-			width: auto;
-			height: 20em;
+			width: 20vw;
+			height: 20vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 }
@@ -191,7 +191,7 @@ hr.rounded {
 			background-size: cover;
 			background-position: center;
 			width: auto;
-			height: 20em;
+			height: 20vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 }
@@ -202,7 +202,7 @@ hr.rounded {
 			background-size: cover;
 			background-position: center;
 			width: auto;
-			height: 20em;
+			height: 20vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 }
@@ -213,7 +213,7 @@ hr.rounded {
 			background-size: cover;
 			background-position: center;
 			width: auto;
-			height: 20em;
+			height: 20vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 		}
@@ -223,7 +223,7 @@ hr.rounded {
 			background-size: cover;
 			background-position: center;
 			width: auto;
-			height: 20em;
+			height: 20vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 	vertical-align: middle;
 	}
@@ -233,7 +233,7 @@ hr.rounded {
 			background-size: cover;
 			background-position: center;
 			width: auto;
-			height: 50em;
+			height: 50vw;
 			border: 0px solid hsla(0,0%,0%,1.00);
 			vertical-align: middle;
 }
@@ -282,7 +282,7 @@ html,body {
 	background-attachment: fixed;
 	box-sizing: border-box;
 	font-family: "Lucida Console", "Courier New", monospace;
-    font-size: 20px;
+    font-size: 1vw;
 	line-height:1.8;
 }
 
@@ -309,13 +309,14 @@ html,body {
 
 .logo {
 	display: block;
-  width: 12em;
+  width: auto;
   flex:1;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	align-items: center;
 	opacity:1;
+
 }
 
 ul {
@@ -329,7 +330,7 @@ position: fixed;
   background-color: black;
 	z-index: 1;
 	width: 100%;
-	height: 4em;
+	height: 10vh;
 	align-items: center;
 	background: hsla(0,0%,0%,0.9);
 }
@@ -358,7 +359,7 @@ li.dropdown {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 5vw;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -425,16 +426,16 @@ input[type=submit]:hover {
 
 h2{
 	color:antiquewhite;
-	font-size:1em;
+	font-size:1.5vw;
 }
 
 h{
-	font-size:1em;
+	font-size:1.3vw;
 }
 
 p{
 	color:antiquewhite;
-	font-size: 0.8em;
+	font-size: 1vw;
 }
 
 section {
