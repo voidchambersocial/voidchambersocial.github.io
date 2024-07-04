@@ -172,10 +172,10 @@ hr.rounded {
 
 /*padded,inline, */
 .socials{
-	padding:20px;
+	padding:0;
 	display:inline-block;
-	width:5vw;
-	height: 5vw;
+	width:2vw;
+	height:2vw;
 }
 
 .img1{
